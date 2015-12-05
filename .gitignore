@@ -1,2 +1,6 @@
 # Webstorm
 .idea/
+
+client/assets/lib
+
+node_modules/
