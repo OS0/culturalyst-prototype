@@ -1,0 +1,1 @@
+var cult = angular.module('cult', ['cult.authCtrl', 'cult.catalystCtrl', 'cult.creativeCtrl', 'cult.searchCtrl', 'ngRoute']);
