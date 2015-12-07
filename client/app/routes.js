@@ -3,11 +3,11 @@
   angular.module('cult', ['ngRoute']).config(
     function($routeProvider) {
       $routeProvider
-        .when('/', {templatUrl: '/app/components/discovery/discoveryMainView.html'})
-        //.when('/home', {templatUrl: '/app/components/discovery/discoveryMainView.html'})
-        .when('/discovery', {templatUrl: '/app/components/discovery/discoveryMainView.html'})
-        .when('/catalyst', {templatUrl: '/app/components/catalyst/view/catalystView.html'})
-        .when('creative', {templatUrl: '/app/components/creative/view/creativeView.html'})
+        .when('/', {templateUrl: 'app/components/discovery/discoveryMainView.html'})
+        //.when('/home', {templateUrl: 'app/components/discovery/discoveryMainView.html'})
+        .when('/discovery', {templateUrl: 'app/components/discovery/discoveryMainView.html'})
+        .when('/catalyst', {templateUrl: 'app/components/catalyst/view/catalystView.html'})
+        .when('creative', {templateUrl: 'app/components/creative/view/creativeView.html'})
         .otherwise({redirectTo: '/'});
     }
   );
