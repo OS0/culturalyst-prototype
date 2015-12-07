@@ -1,19 +1,32 @@
 <!doctype html>
-<html lang="en">
+<html ng-app="cult" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Culturalyst</title>
     <script src="assets/lib/angular/angular.js"></script>
     <script src="assets/lib/angular-route/angular-route.js"></script>
   </head>
   <body>
 
+    <nav>
+      <ul>
+        <li><a href="#/home">home</a></li>
+        <li><a href="#/discovery">discovery</a></li>
+        <li><a href="#/creatives">creatives</a></li>
+        <li><a href="#/catalyst">catalyst</a></li>
+      </ul>
+    </nav>
+
+    <h1>this is the main page, i.e., SPA that houses all other views</h1>
+
     <div ng-view></div>
 
-    <script src="app/auth/authCtrl.js"></script>
-    <script src="app/catalyst/catalystCtrl.js"></script>
-    <script src="app/creative/creativeCtrl.js"></script>
-    <script src="app/discovery/search/searchCtrl.js"></script>
     <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+    <script src="app/components/auth/authCtrl.js"></script>
+    <script src="app/components/catalyst/catalystCtrl.js"></script>
+    <script src="app/components/creative/creativeCtrl.js"></script>
+    <script src="app/components/discovery/discoveryCtrl.js"></script>
+
   </body>
 </html>

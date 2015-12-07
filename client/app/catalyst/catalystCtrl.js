@@ -1,2 +1,0 @@
-artistCtrl.js
-artistService.js
