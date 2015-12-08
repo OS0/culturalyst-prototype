@@ -18,4 +18,5 @@ app.listen(app.get('port'), function() {
 });
 
 var routes = express.Router();
-routes.get('/getCreatives', handler.getArtists);
+routes.get('/getCreatives', handler.getCreatives);
+routes.post('/newCreative', handler.newCreative);
