@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Culturalyst</title>
     <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="angular(.min).js"></script>
+    <script src="ng-file-upload-shim(.min).js"></script> <!-- for no html5 browsers support -->
+    <script src="ng-file-upload(.min).js"></script>
     <script src="assets/lib/angular/angular.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <!--<script src="assets/lib/angular-route/angular-route.js"></script>-->
@@ -90,10 +95,11 @@
           </form>
         </div>
       </div>
-    </nav>    
+    </nav>
   </header>
 
     <div ui-view></div>
+
 
 
     <script src="app/app.js"></script>

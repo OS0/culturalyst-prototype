@@ -1,4 +1,3 @@
-
   angular
     .module('cult', ['ui.router', 'cult.discovery'])
     .config(['$urlRouterProvider', '$stateProvider',
@@ -31,7 +30,6 @@
           .state('creativeSignUp.creativeRewardsView', {
             templateUrl: 'app/components/auth/views/sign-up/creativeRewardsView.html'
           })
-
           .state('creative.bio', {
             templateUrl: 'app/components/creative/views/creativeView.bio.html'
           })
@@ -42,4 +40,4 @@
             templateUrl: 'app/components/creative/views/creativeView.catalysts.html'
           })
     }
-  ])
+  ]);
