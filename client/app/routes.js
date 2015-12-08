@@ -21,7 +21,6 @@
           .state('creativeSignUp', {
             url: '/creativeSignUp',
             templateUrl: 'app/components/auth/views/authMainView.html'
-            //controller: 'authController'
           })
           .state('creativeSignUp.creativeInfoView', {
             templateUrl: 'app/components/auth/views/sign-up/creativeInfoView.html'
