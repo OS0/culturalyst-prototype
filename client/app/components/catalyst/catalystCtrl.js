@@ -1,6 +1,6 @@
 /** This si the Catalyst main controller */
-(function(angular) {
-  "use strict";
+//(function(angular) {
+//  "use strict";
   angular.module('')
     .controller('catalystController', CatalystController);
 
@@ -10,4 +10,4 @@
 
   }
 
-})(angular);
+//})(angular);

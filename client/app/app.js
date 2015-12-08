@@ -1,5 +1,5 @@
-(function(angular) {
-  'use strict';
+//(function(angular) {
+//  'use strict';
   angular.module('cult', [
     'cult.auth',
     'cult.catalyst',
@@ -7,4 +7,4 @@
     'cult.discovery',
     'ui.router'
   ]);
-})(angular);
+//})(angular);
