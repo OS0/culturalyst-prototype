@@ -1,3 +1,4 @@
+var path = require('path');
 var express = require('express');
 
 var logger = require('morgan');
@@ -6,7 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var app = express();
-app.use(express.static('public'));
+app.use(express.static('client'));
 app.set('port', process.envPORT || 3000);
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({'extended':'true'}));
@@ -17,5 +18,4 @@ app.listen(app.get('port'), function() {
 });
 
 var routes = express.Router();
-routes.get('/getArtists', handler.getArtists);
-
+routes.get('/getCreatives', handler.getArtists);
