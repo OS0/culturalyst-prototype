@@ -6,8 +6,7 @@
         $stateProvider
           .state('discovery', {
             url: '/',
-            templateUrl: 'app/components/discovery/discoveryMainView.html',
-            controller: 'discoveryCtrl'
+            templateUrl: 'app/components/discovery/discoveryMainView.html'
           })
           .state('creative', {
             url: '/creative',
@@ -39,6 +38,10 @@
           })
           .state('creative.catalysts', {
             templateUrl: 'app/components/creative/views/creativeView.catalysts.html'
+          })
+          .state('mockDataButton', {
+            template: '<button ng-click="updateMockData()">update mock data</button>',
+            controller: 'ResultsCtrl'
           })
     }
   ]);
