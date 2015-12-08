@@ -5,6 +5,6 @@
     'cult.catalyst',
     'cult.creative',
     'cult.discovery',
-    'ngRoute'
+    'ui.router'
   ]);
 })(angular);

@@ -3,7 +3,7 @@
 ///////////////////////
 
 //Database schema
-var db = require('./db/schema.js')
+//var db = require('db/schema.js');
 
 
 ///////////////////////
@@ -20,4 +20,4 @@ exports.getArtists = function(req, res) {
       res.status(200).send(artists);
     }
   });
-}
+};
