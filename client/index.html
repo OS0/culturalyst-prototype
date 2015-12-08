@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="cult" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Culturalyst</title>
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/angular/angular.js"></script>
+    <!--<script src="assets/lib/angular-route/angular-route.js"></script>-->
+    <script
+      src="assets/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.js"></script>
+  </head>
+  <body>
+
+    <nav>
+      <ul>
+        <li><a ui-sref="signIn-signUp"> sign-in / sign-up </a></li>
+        <li><a ui-sref="discovery"> discovery </a></li>
+        <li><a ui-sref="creative"> creative </a></li>
+        <li><a ui-sref="catalyst"> catalyst </a></li>
+      </ul>
+    </nav>
+
+    <h1> this is the main page, i.e., SPA that houses all other views </h1>
+
+    <div ui-view></div>
+
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+    <script src="app/components/auth/authCtrl.js"></script>
+    <script src="app/components/catalyst/catalystCtrl.js"></script>
+    <script src="app/components/creative/creativeCtrl.js"></script>
+    <script src="app/components/discovery/discoveryCtrl.js"></script>
+
+
+  </body>
+</html>
