@@ -3,7 +3,8 @@
 ///////////////////////
 
 //Database schema
-//var db = require('db/schema.js');
+
+// var db = require('./db/schema.js')
 
 
 ///////////////////////
