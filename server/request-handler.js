@@ -12,7 +12,8 @@ var db = require('./db/schema.js')
 
 //Create new Creative user
 exports.newCreative = function(req, res) {
-  db.newCreative(function(err, creatives) {
+  var creative = req.data;
+  db.newCreative(creative.name, creative.picurl, creative.medium, creative.submedium, function(err, creatives) {
     if (err) {
       res.status(422).send(err);
     } else {

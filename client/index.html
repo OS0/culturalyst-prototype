@@ -20,7 +20,8 @@
         <li><a ui-sref="discovery"> discovery </a></li>
         <li><a ui-sref="creative"> creative </a></li>
         <li><a ui-sref="catalyst"> catalyst </a></li>
-        <li><a ng-click="createMockData()"> mock data </a></li>
+        <li ng-controller="AuthCtrl"><a ng-click="createMockData()"> mock data </a></li>
+        <!-- <authMainView ng-controller="AuthCtrl"></authMainView> -->
       </ul>
     </nav>
 

@@ -1,9 +1,9 @@
 /** This is an Auth services if needed */
 (function(angular) {
   "use strict";
-  angular.module('')
-    .service('',)
-    .factory('Auth', function($http) {
+  angular.module('cult.authService', [])
+    // .service('',)
+    .factory('authFactory', function($http) {
       var mockData = {
         1: {
           name: 'Olufemi',
@@ -36,8 +36,16 @@
           url: '/newCreative',
           data: creative
         })
+        .then(function(res){
+          if (res.status === 200) {
+            console.log('User created: ')
+          } else {
+            console.log('Error while creating user')
+          }
+        })
       };
       var createMockData = function() {
+        console.log('Creating mock data');
         mockData.forEach(function(creative) {
           signup(creative);
         })
@@ -48,8 +56,8 @@
       }
     });
 
-  function() {
+//   function() {
 
-  }
+//   }
 
 })(angular);
