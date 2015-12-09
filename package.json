@@ -2,7 +2,8 @@
   "name": "culturalyst",
   "version": "1.0.0",
   "engines": {
-    "npm": "0.12.7"
+    "node": "0.12.7",
+    "npm": "2.14.4"
   },
   "description": "",
   "main": "index.js",
