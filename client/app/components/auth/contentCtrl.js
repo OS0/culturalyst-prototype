@@ -1,12 +1,7 @@
-// var app = angular.module('cult', ['ngFileUpload']);
+var content = angular.module('cult.contentUpload', ['ngFileUpload']);
 
 
-// testing testing testing
-
-(function(angular) {
-  "use strict";
-  angular.module('cult.contentUpload', ['ngFileUpload'])
-.controller('UploadCtrl', ['$scope', 'Upload', '$timeout', function ($scope, Upload, $timeout) {
+content.controller('UploadCtrl', ['$scope', 'Upload', '$timeout', function ($scope, Upload, $timeout) {
     $scope.$watch('files', function () {
         $scope.upload($scope.files);
     });
@@ -43,5 +38,3 @@
     };
 }]);
 //end of testing testing testing
-
-})(angular);

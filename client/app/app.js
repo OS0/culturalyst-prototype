@@ -5,5 +5,5 @@
     'cult.catalyst',
     'cult.creative',
     'ui.router',
-    'cult.upload'
+    'cult.contentUpload'
   ]);
