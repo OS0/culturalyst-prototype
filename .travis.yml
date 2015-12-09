@@ -1,0 +1,4 @@
+# Until we adds some tests, this file basically won't do anything
+language: node_js
+node_js:
+  - '0.10'
