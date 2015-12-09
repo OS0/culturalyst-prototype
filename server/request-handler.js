@@ -4,7 +4,6 @@
 
 //Database schema
 var db = require('./db/schema.js');
-
 ///////////////////////
 // Request-Handlers  //
 ///////////////////////

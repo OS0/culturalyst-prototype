@@ -4,5 +4,6 @@
     'cult.auth',
     'cult.catalyst',
     'cult.creative',
-    'ui.router'
+    'ui.router',
+    'cult.upload'
   ]);
