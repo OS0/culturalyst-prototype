@@ -1,4 +1,4 @@
-<div ng-controller="UploadCtrl">
+<div>
     Drop File:
     <div ngf-drop ngf-select ng-model="files" class="drop-box"
         ngf-drag-over-class="'dragover'" ngf-multiple="true" ngf-allow-dir="true"
@@ -7,8 +7,6 @@
   <div class="preview">
             <div>Preview:</div>
             <img ngf-src="!files[0].$error && files[0]">
-            <audio controls="" ngf-src="!files[0].$error && files[0]"></audio>
-            <video controls="" ngf-src="!files[0].$error && files[0]"></video>
           </div>
   <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
     Files:
