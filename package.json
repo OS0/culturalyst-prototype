@@ -1,6 +1,9 @@
 {
   "name": "culturalyst",
   "version": "1.0.0",
+  "engines": {
+    "npm": "0.12.7"
+  },
   "description": "",
   "main": "index.js",
   "directories": {
