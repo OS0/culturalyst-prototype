@@ -19,5 +19,3 @@ app.listen(app.get('port'), function() {
 
 var routes = express.Router();
 routes.get('/getCreatives', handler.getArtists);
-
-// BOOM THIS SHOULD WORK!
