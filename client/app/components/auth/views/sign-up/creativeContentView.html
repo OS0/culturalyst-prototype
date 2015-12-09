@@ -1,19 +1,19 @@
-<div class="container">
-  <div ng-controller="UploadCtrl">
+<div ng-controller="UploadCtrl">
     Drop File:
     <div ngf-drop ngf-select ng-model="files" class="drop-box"
         ngf-drag-over-class="'dragover'" ngf-multiple="true" ngf-allow-dir="true"
         accept="image/*,application/pdf"
-        ngf-pattern="'image/*,application/pdf'">Drop your images here or Click to upload
-    </div>
-    <div class="preview">
-      <div>Preview:</div>
-      <img ngf-src="!files[0].$error && files[0]">
-    </div>
-    <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+        ngf-pattern="'image/*,application/pdf'">Drop your images here or Click to upload</div>
+  <div class="preview">
+            <div>Preview:</div>
+            <img ngf-src="!files[0].$error && files[0]">
+            <audio controls="" ngf-src="!files[0].$error && files[0]"></audio>
+            <video controls="" ngf-src="!files[0].$error && files[0]"></video>
+          </div>
+  <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
     Files:
     <ul>
-      <li ng-repeat="f in files" style="font:smaller">{{f.name}} {{f.$error}} {{f.$errorParam}}</li>
+        <li ng-repeat="f in files" style="font:smaller">{{f.name}} {{f.$error}} {{f.$errorParam}}</li>
     </ul>
-  </div>
+</div>
 </div>

@@ -5,8 +5,7 @@
 
 (function(angular) {
   "use strict";
-  angular.module('cult.upload', ['ngFileUpload'])
-
+  angular.module('cult.contentUpload', ['ngFileUpload'])
 .controller('UploadCtrl', ['$scope', 'Upload', '$timeout', function ($scope, Upload, $timeout) {
     $scope.$watch('files', function () {
         $scope.upload($scope.files);
