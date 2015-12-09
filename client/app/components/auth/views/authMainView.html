@@ -1,3 +1,21 @@
-<div>
-  this is the main auth view. It houses all the other views
+<div class="container">
+
+  <div class="row">
+
+    <div ui-view=""></div>
+
+    <div class="sub-navigation vcenter">
+      <p>navigation</p>
+
+      <nav>
+        <ul class="pagination">
+          <li><a ui-sref=".creativeInfoView"> info </a></li>
+          <li><a ui-sref=".creativeContentView"> content </a></li>
+          <li><a ui-sref=".creativeRewardsView"> rewards </a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
 </div>

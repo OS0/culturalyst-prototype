@@ -20,12 +20,17 @@
           })
           .state('creativeSignUp', {
             url: '/creativeSignUp',
-            templateUrl: 'app/components/auth/views/creativeSignUp.html'
+            templateUrl: 'app/components/auth/views/authMainView.html'
           })
-          .state('auth', {
-            url: '/signIn-signUp',
-            templateUrl: 'app/components/auth/views/creativeRewardsView.html'
+          .state('creativeSignUp.creativeInfoView', {
+            templateUrl: 'app/components/auth/views/sign-up/creativeInfoView.html'
           })
+          .state('creativeSignUp.creativeContentView', {
+            templateUrl: 'app/components/auth/views/sign-up/creativeContentView.html'
+          })
+          .state('creativeSignUp.creativeRewardsView', {
+            templateUrl: 'app/components/auth/views/sign-up/creativeRewardsView.html'
+          });
       }
     ]);
 })(angular);

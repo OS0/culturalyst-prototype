@@ -1,4 +1,23 @@
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
 .rewards.container-fluid {
   background-color: #d2d2d2;
   border-radius: 5px;
+}
+
+.rwds {
+  background-color: #1b6d85;
+  border-radius: 15px;
+}
+
+.rewards-header, .custom-rewards-header {
+  text-align: center;
+}
+
+.col-md-3 {
+  /*background-color: #8a6d3b;*/
 }
