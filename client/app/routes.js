@@ -30,7 +30,17 @@
           })
           .state('creativeSignUp.creativeRewardsView', {
             templateUrl: 'app/components/auth/views/sign-up/creativeRewardsView.html'
-          });
-      }
-    ]);
+          })
+
+          .state('creatives.bio', {
+            templateUrl: 'app/components/creative/views/creativeView.bio.html'
+          })
+          .state('creatives.posts', {
+            templateUrl: 'app/components/creative/views/creativeView.posts.html'
+          })
+          .state('creatives.catalysts', {
+            templateUrl: 'app/components/creative/views/creativeView.catalysts.html'
+          })
+    }
+  ])
 })(angular);
