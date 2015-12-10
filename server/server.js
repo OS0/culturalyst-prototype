@@ -22,5 +22,6 @@ app.listen(app.get('port'), function() {
 /////////////////////////////////////////
 // server routes for database requests //
 /////////////////////////////////////////
+
 app.get('/getCreatives', handler.getCreatives);
 app.post('/newCreative', handler.newCreative);

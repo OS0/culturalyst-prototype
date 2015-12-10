@@ -18,8 +18,8 @@ sequelize.sync();
 // Helper functions
 exports.newCreative = function(name, picurl, medium, submedium, callback) {
   Creative.findAll({ where: { name: name } })
-    .then(function(creative){
-      if ( creative.length > 0 ) {
+    .then(function(creatives){
+      if ( creatives.length > 0 ) {
         callback('Name already taken')
       } else {
         Creative.create({
@@ -36,9 +36,9 @@ exports.newCreative = function(name, picurl, medium, submedium, callback) {
 };
 
 exports.getCreatives = function(callback) {
-  Creative.findAll().then(function(creative){
-    if (creative.length) {
-      callback(null, creative);
+  Creative.findAll().then(function(creatives){
+    if (creatives.length) {
+      callback(null, creatives);
     } else {
       callback("We couldn't find any creatives")
     }

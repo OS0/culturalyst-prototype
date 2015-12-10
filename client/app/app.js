@@ -1,9 +1,9 @@
-
   angular.module('cult', [
     'cult.discovery',
     'cult.auth',
+    'cult.results',
     'cult.catalyst',
     'cult.creative',
-    'ui.router',
+    'cult.ui-router',
     'cult.contentUpload'
   ]);
