@@ -21,7 +21,7 @@ angular.module('cult.discovery', [])
     navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
     var lat;
     var lng;
- 
+
 	//Get the latitude and the longitude;
 		function successFunction(position) {
 		    lat = position.coords.latitude;
@@ -34,7 +34,7 @@ angular.module('cult.discovery', [])
 		}
 
 		function initialize() {
-    
+
   	}
 
   	//TODO: Code LatLng to Show City
