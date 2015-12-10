@@ -2,7 +2,6 @@ var content = angular.module('cult.contentUpload', ['ngFileUpload']);
 
 
 content.controller('UploadCtrl', ['$scope', 'Upload', '$timeout', function ($scope, Upload, $timeout) {
-  console.log("this was shown");
     $scope.$watch('files', function () {
         $scope.upload($scope.files);
     });

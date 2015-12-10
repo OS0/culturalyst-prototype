@@ -1,33 +1,14 @@
-<div>
-    Drop File:
-    <div ngf-drop ngf-select ng-model="files" class="drop-box"
+<div id="uploader">
+  <h3 class='upload-header'>Add Your Profile and Cover Photos</h3>
+    <div ngf-drop ngf-select ng-model="files" class="drop-box profile-box form-group"
         ngf-drag-over-class="'dragover'" ngf-multiple="true" ngf-allow-dir="true"
         accept="image/*,application/pdf"
-        ngf-pattern="'image/*,application/pdf'">Drop your images here or Click to upload</div>
+        ngf-pattern="'image/*,application/pdf'">Click to add your photo or drop it here</div>
   <div class="preview">
-            <div>Preview:</div>
-            <img ngf-src="!files[0].$error && files[0]">
+            <div class="img-view">
+              <img ngf-src="!files[0].$error && files[0]">
+            </div>
           </div>
-  <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
-    Files:
-    <ul>
-        <li ng-repeat="f in files" style="font:smaller">{{f.name}} {{f.$error}} {{f.$errorParam}}</li>
-    </ul>
+          <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+  <button class="btn btn-default btn-md continue-btn" type="button" name="button"> Save & Continue</button>
 </div>
-
-
-
-
-
-<!-- <div class="container">
-  <div class="drop-box">
-    Drop your images here or Click to uplaod
-  </div>
-  <div class="preview">
-    <p>Preview</p>
-    <img src="#" alt="" />
-  </div>
-  <div class="no-drop">Drag/drop is not supported here</div>
-
-
-</div> -->
