@@ -1,6 +1,6 @@
 var Sequelize = require('sequelize');
 var sequelize = new Sequelize('culturalyst', 'root', null, {});
-var Promise = require('bluebird');
+//var Promise = require('bluebird');
 
 // Creatives
 var Creative = sequelize.define('creatives', {
