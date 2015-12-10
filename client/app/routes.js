@@ -6,7 +6,8 @@
         $stateProvider
           .state('discovery', {
             url: '/',
-            templateUrl: 'app/components/discovery/discoveryMainView.html'
+            templateUrl: 'app/components/discovery/discoveryMainView.html',
+            controller: 'discoveryCtrl'
           })
           .state('creative', {
             url: '/creative',
@@ -40,7 +41,8 @@
             templateUrl: 'app/components/creative/views/creativeView.catalysts.html'
           })
           .state('mockDataButton', {
-            template: '<div style="top: 200px; height: 200px; float: bottom"><button style="position: relative; top: 200px" ng-click="updateMockData()">update mock data</button></div>',
+            url: '/mockDataButton',
+            template: '<div><button ng-click="updateMockData()">update mock data</button></div>',
             controller: 'ResultsCtrl'
           })
     }
