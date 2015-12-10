@@ -1,5 +1,5 @@
   angular
-    .module('cult', ['ui.router', 'cult.contentUpload', 'cult.discovery'])
+    .module('cult.ui-router', ['ui.router', 'cult.contentUpload', 'cult.discovery'])
     .config(['$urlRouterProvider', '$stateProvider',
       function($urlRouterProvider, $stateProvider) {
         $urlRouterProvider.otherwise('/');
@@ -39,6 +39,11 @@
           })
           .state('creative.catalysts', {
             templateUrl: 'app/components/creative/views/creativeView.catalysts.html'
+          })
+          .state('mockDataButton', {
+            url: '/mockDataButton',
+            template: '<div><button ng-click="updateMockData()">update mock data</button></div>',
+            controller: 'ResultsCtrl'
           })
     }
   ]);

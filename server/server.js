@@ -8,7 +8,9 @@ var bodyParser = require('body-parser');
 
 var app = express();
 app.use(express.static('client'));
+
 app.set('port', process.env.PORT || 3000);
+
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({'extended':'true'}));
 app.use(bodyParser.json());
@@ -17,6 +19,9 @@ app.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });
 
-var routes = express.Router();
+/////////////////////////////////////////
+// server routes for database requests //
+/////////////////////////////////////////
 
-routes.get('/getCreatives', handler.getCreatives);
+app.get('/getCreatives', handler.getCreatives);
+app.post('/newCreative', handler.newCreative);
