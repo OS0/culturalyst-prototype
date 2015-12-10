@@ -1,14 +1,14 @@
-(function(angular) {
-  'use strict';
+
   angular
-    .module('cult', ['ui.router'])
+    .module('cult', ['ui.router', 'cult.discovery'])
     .config(['$urlRouterProvider', '$stateProvider',
       function($urlRouterProvider, $stateProvider) {
         $urlRouterProvider.otherwise('/');
         $stateProvider
           .state('discovery', {
             url: '/',
-            templateUrl: 'app/components/discovery/discoveryMainView.html'
+            templateUrl: 'app/components/discovery/discoveryMainView.html',
+            controller: 'discoveryCtrl'
           })
           .state('creative', {
             url: '/creative',
@@ -43,4 +43,3 @@
           })
     }
   ])
-})(angular);
