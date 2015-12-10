@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Culturalyst</title>
     <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/lib/angular/angular.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <!--<script src="assets/lib/angular-route/angular-route.js"></script>-->
@@ -12,7 +14,14 @@
     <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/creativeStyle.css">
+    <link rel="stylesheet" href="assets/styles/upload.css">
     <script src="assets/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/angular/angular.js"></script>
+    <!--<script src="assets/lib/angular-route/angular-route.js"></script>-->
+    <script src="assets/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="assets/lib/ng-file-upload-shim/ng-file-upload-shim.min.js"></script> <!-- for no html5 browsers support -->
+    <script src="assets/lib/ng-file-upload/ng-file-upload.min.js"></script>
   </head>
   <body>
   <header>
@@ -90,11 +99,10 @@
           </form>
         </div>
       </div>
-    </nav>    
+    </nav>
   </header>
 
     <div ui-view></div>
-
 
     <script src="app/app.js"></script>
     <script src="app/routes.js"></script>
@@ -102,6 +110,8 @@
     <script src="app/components/discovery/discoveryCtrl.js"></script>
     <script src="app/components/creative/creativeCtrl.js"></script>
     <script src="app/components/catalyst/catalystCtrl.js"></script>
+    <script src="app/components/auth/contentCtrl.js"></script>
+
 
   </body>
 </html>
