@@ -19,9 +19,6 @@ app.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });
 
-/////////////////////////////////////////
-// server routes for database requests //
-/////////////////////////////////////////
 
 app.get('/getCreatives', handler.getCreatives);
 app.post('/newCreative', handler.newCreative);
