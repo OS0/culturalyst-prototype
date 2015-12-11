@@ -1,4 +1,10 @@
-# This is a test 
 language: node_js
 node_js:
-  - '0.12.7'
+- 0.12.7
+deploy:
+  provider: heroku
+  api_key:
+    secure: zUZkN+GPA2aaQ/YaQpVaU4l8SU+nRNA1jwkwYIDRorcXKKmKIJU4EGrn024U4GcSePreuiRuPUs/j+tgp7VXsb8wNbtMi12CcK0Ram0DU8m+YMcg/OhP/HmInfgiEFbmTUWBuBiy9sTNk/VMxbORe1vG88xD3nGs03h33Dj/cgkqDlvqnahCas9ZGcR10nLWv2x2vJd//0T7WiOOUKvCQyRClCx4b7LGo2HZQJrcj1BQpRuOFzQQILGeWFXMFXUzOGao+vglFHMpgYGnqU0gsr6algFmPW7ITRAQm2ZNAhaWBWegImQIdaj+GpvP2TA93yUBj8tgBU0nokGLCM0D9SuGxrqwP377/X0IULGfK9Qugk9NWr5U+coxlr2ASdyxbM8bvQR3j0tnzL2fUCB25Usbf9AjwWHSmyKYK7VENnPiqS/8V8HLXsNd0CS0nz5tOMp1hRlkfRijt5YzuqCaYGNlWGy0ma1yrgS+HEeu1nNR4rGQWjbP8K16dHKz+WKNL4ncU2Z6zrqFEAb87yHECu3+yDz8u2HYRdPYXnnGHDWRcsVzpAsP0fxiNGUCBOrdIVD7HqD9/4n11YCXyzjm81iPjLnIgPIsX5WxICYxwHnDWs3F4K0krfLdG1Mckp/M7Oe4VS1SjcIWNWMwzZ4wkVVTLfOGEE/Jjph2FIjX1E4=
+  app: culturalyst
+  on:
+    branch: travis
