@@ -1,5 +1,11 @@
 angular
-  .module('cult.ui-router', ['ui.router', 'cult.contentUpload', 'cult.discovery'])
+  .module('cult.ui-router', [
+    'ui.router',
+    'cult.contentUpload',
+    'cult.discovery',
+    'cult.signupRewards',
+    'cult.signup'
+  ])
   .config(['$urlRouterProvider', '$stateProvider',
     function($urlRouterProvider, $stateProvider) {
       $urlRouterProvider.otherwise('/');
@@ -19,7 +25,8 @@ angular
         })
         .state('creativeSignUp', {
           url: '/creativeSignUp',
-          templateUrl: 'app/components/auth/views/authMainView.html'
+          templateUrl: 'app/components/auth/views/authMainView.html',
+          controller: 'SignupParentsCtrl'
         })
         .state('creativeSignUp.creativeInfoView', {
           templateUrl: 'app/components/auth/views/sign-up/creativeInfoView.html'
@@ -29,7 +36,8 @@ angular
           controller: 'UploadCtrl'
         })
         .state('creativeSignUp.creativeRewardsView', {
-          templateUrl: 'app/components/auth/views/sign-up/creativeRewardsView.html'
+          templateUrl: 'app/components/auth/views/sign-up/creativeRewardsView.html',
+          controller: 'RewardsCtrl'
         })
         .state('creative.bio', {
           templateUrl: 'app/components/creative/views/creativeView.bio.html'
