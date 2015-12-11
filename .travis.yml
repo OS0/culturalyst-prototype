@@ -1,4 +1,4 @@
-# Until we adds some tests, this file basically won't do anything
+# This is a test 
 language: node_js
 node_js:
   - '0.12.7'
