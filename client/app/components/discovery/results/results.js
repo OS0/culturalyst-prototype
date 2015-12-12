@@ -7,20 +7,33 @@ angular.module('cult.results', ['cult.mockData'])
   $scope.updateMockData = function() {
     $scope.getCreatives()
     .then(function() {
-      console.log($scope.names);
-      console.log(mockDataArray);
+      console.log("Previous Users in Database: ", $scope.names);
+      console.log("Updated Users in Database: ", mockDataArray);
       mockDataArray.forEach(function(creative) {
         if ($scope.names.indexOf(creative.name) === -1) {
-          $scope.newCreative(creative);
+          $scope.newUser(creative);
         }
       })
     })
   };
 
-  $scope.newCreative = function(creative) {
+  /*Creative Object = {
+    creative: Boolean,
+    name: varchar,
+    email: varchar,
+    password: varchar,
+    location: varchar,
+    bio: varchar,
+    medium: varchar,
+    submedium: varchar,
+    picUrl: varchar
+  }
+  */
+
+  $scope.newUser = function(creative) {
     return $http({
             method: 'POST',
-            url: 'newCreative',
+            url: 'newUser',
             data: creative
           })
           .then(function(res) {
@@ -37,7 +50,7 @@ angular.module('cult.results', ['cult.mockData'])
       method: 'GET',
       url: 'getCreatives',
     }).then(function(res){
-      if (res.status === 200) {
+      if (res.status === 200 && res.data) {
         $scope.data = res.data;
         $scope.names = res.data.map(function(creatives) {
           return creatives.name;

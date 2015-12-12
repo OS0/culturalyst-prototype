@@ -21,4 +21,4 @@ app.listen(app.get('port'), function() {
 
 
 app.get('/getCreatives', handler.getCreatives);
-app.post('/newCreative', handler.newCreative);
+app.post('/newUser', handler.newUser);
